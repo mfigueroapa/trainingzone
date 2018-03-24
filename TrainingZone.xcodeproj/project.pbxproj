@@ -8,20 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		227EC2CC1FCA20480050DBC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EC2CB1FCA20480050DBC3 /* AppDelegate.swift */; };
-		227EC2CE1FCA20480050DBC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EC2CD1FCA20480050DBC3 /* ViewController.swift */; };
 		227EC2D11FCA20480050DBC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227EC2CF1FCA20480050DBC3 /* Main.storyboard */; };
 		227EC2D31FCA20480050DBC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227EC2D21FCA20480050DBC3 /* Assets.xcassets */; };
 		227EC2D61FCA20480050DBC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227EC2D41FCA20480050DBC3 /* LaunchScreen.storyboard */; };
+		227EC2DE1FCA20AD0050DBC3 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EC2DD1FCA20AD0050DBC3 /* Exercise.swift */; };
+		227EC2E21FCA23050050DBC3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EC2E11FCA23050050DBC3 /* Model.swift */; };
+		227EC2E41FCA32890050DBC3 /* datos.txt in Resources */ = {isa = PBXBuildFile; fileRef = 227EC2E31FCA32890050DBC3 /* datos.txt */; };
+		227EC2E61FCA36300050DBC3 /* StringFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EC2E51FCA36300050DBC3 /* StringFile.swift */; };
+		227EC2E81FCC76BB0050DBC3 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EC2E71FCC76BB0050DBC3 /* CategoryCell.swift */; };
+		227EC2ED1FCC7F7F0050DBC3 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EC2EC1FCC7F7F0050DBC3 /* CategoriesViewController.swift */; };
+		227EC2EF1FCC9D1B0050DBC3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EC2EE1FCC9D1B0050DBC3 /* Category.swift */; };
+		227EC2F11FCCAB6D0050DBC3 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EC2F01FCCAB6D0050DBC3 /* ExerciseCell.swift */; };
+		227EC2F31FCCAD370050DBC3 /* AllExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EC2F21FCCAD370050DBC3 /* AllExercisesViewController.swift */; };
+		227EC2F51FCCD99D0050DBC3 /* MuscleSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EC2F41FCCD99D0050DBC3 /* MuscleSelectorViewController.swift */; };
+		227EC32B1FD0A7B90050DBC3 /* MuscleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EC32A1FD0A7B90050DBC3 /* MuscleCell.swift */; };
+		227EC32F1FD0C0D90050DBC3 /* SegueFromRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EC32D1FD0C0D90050DBC3 /* SegueFromRight.swift */; };
+		227EC3311FD0C2D80050DBC3 /* ExercisesBySelectedMuscleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EC3301FD0C2D80050DBC3 /* ExercisesBySelectedMuscleViewController.swift */; };
+		227EC3341FD0E0BD0050DBC3 /* HowToRepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EC3331FD0E0BD0050DBC3 /* HowToRepViewController.swift */; };
+		227EC3361FD0E3540050DBC3 /* NutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EC3351FD0E3540050DBC3 /* NutritionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		227EC2C81FCA20480050DBC3 /* TrainingZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainingZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		227EC2CB1FCA20480050DBC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		227EC2CD1FCA20480050DBC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		227EC2D01FCA20480050DBC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		227EC2D21FCA20480050DBC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		227EC2D51FCA20480050DBC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		227EC2D71FCA20480050DBC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		227EC2DD1FCA20AD0050DBC3 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		227EC2E11FCA23050050DBC3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		227EC2E31FCA32890050DBC3 /* datos.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = datos.txt; sourceTree = "<group>"; };
+		227EC2E51FCA36300050DBC3 /* StringFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFile.swift; sourceTree = "<group>"; };
+		227EC2E71FCC76BB0050DBC3 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		227EC2EC1FCC7F7F0050DBC3 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		227EC2EE1FCC9D1B0050DBC3 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		227EC2F01FCCAB6D0050DBC3 /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
+		227EC2F21FCCAD370050DBC3 /* AllExercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExercisesViewController.swift; sourceTree = "<group>"; };
+		227EC2F41FCCD99D0050DBC3 /* MuscleSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleSelectorViewController.swift; sourceTree = "<group>"; };
+		227EC32A1FD0A7B90050DBC3 /* MuscleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleCell.swift; sourceTree = "<group>"; };
+		227EC32D1FD0C0D90050DBC3 /* SegueFromRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueFromRight.swift; sourceTree = "<group>"; };
+		227EC3301FD0C2D80050DBC3 /* ExercisesBySelectedMuscleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesBySelectedMuscleViewController.swift; sourceTree = "<group>"; };
+		227EC3331FD0E0BD0050DBC3 /* HowToRepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToRepViewController.swift; sourceTree = "<group>"; };
+		227EC3351FD0E3540050DBC3 /* NutritionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +82,52 @@
 		227EC2CA1FCA20480050DBC3 /* TrainingZone */ = {
 			isa = PBXGroup;
 			children = (
-				227EC2CB1FCA20480050DBC3 /* AppDelegate.swift */,
-				227EC2CD1FCA20480050DBC3 /* ViewController.swift */,
+				227EC2EB1FCC76FE0050DBC3 /* Controllers */,
+				227EC2EA1FCC76F30050DBC3 /* Model */,
+				227EC3321FD0DEF80050DBC3 /* CustomClasses */,
 				227EC2CF1FCA20480050DBC3 /* Main.storyboard */,
+				227EC2CB1FCA20480050DBC3 /* AppDelegate.swift */,
+				227EC2E31FCA32890050DBC3 /* datos.txt */,
 				227EC2D21FCA20480050DBC3 /* Assets.xcassets */,
 				227EC2D41FCA20480050DBC3 /* LaunchScreen.storyboard */,
 				227EC2D71FCA20480050DBC3 /* Info.plist */,
 			);
 			path = TrainingZone;
+			sourceTree = "<group>";
+		};
+		227EC2EA1FCC76F30050DBC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				227EC2E11FCA23050050DBC3 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		227EC2EB1FCC76FE0050DBC3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				227EC2EC1FCC7F7F0050DBC3 /* CategoriesViewController.swift */,
+				227EC2F21FCCAD370050DBC3 /* AllExercisesViewController.swift */,
+				227EC2F41FCCD99D0050DBC3 /* MuscleSelectorViewController.swift */,
+				227EC3301FD0C2D80050DBC3 /* ExercisesBySelectedMuscleViewController.swift */,
+				227EC3331FD0E0BD0050DBC3 /* HowToRepViewController.swift */,
+				227EC3351FD0E3540050DBC3 /* NutritionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		227EC3321FD0DEF80050DBC3 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				227EC2F01FCCAB6D0050DBC3 /* ExerciseCell.swift */,
+				227EC2E71FCC76BB0050DBC3 /* CategoryCell.swift */,
+				227EC32A1FD0A7B90050DBC3 /* MuscleCell.swift */,
+				227EC2EE1FCC9D1B0050DBC3 /* Category.swift */,
+				227EC2E51FCA36300050DBC3 /* StringFile.swift */,
+				227EC32D1FD0C0D90050DBC3 /* SegueFromRight.swift */,
+				227EC2DD1FCA20AD0050DBC3 /* Exercise.swift */,
+			);
+			path = CustomClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +191,7 @@
 			files = (
 				227EC2D61FCA20480050DBC3 /* LaunchScreen.storyboard in Resources */,
 				227EC2D31FCA20480050DBC3 /* Assets.xcassets in Resources */,
+				227EC2E41FCA32890050DBC3 /* datos.txt in Resources */,
 				227EC2D11FCA20480050DBC3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,8 +203,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				227EC2CE1FCA20480050DBC3 /* ViewController.swift in Sources */,
+				227EC2F31FCCAD370050DBC3 /* AllExercisesViewController.swift in Sources */,
+				227EC2F51FCCD99D0050DBC3 /* MuscleSelectorViewController.swift in Sources */,
+				227EC32B1FD0A7B90050DBC3 /* MuscleCell.swift in Sources */,
+				227EC2E21FCA23050050DBC3 /* Model.swift in Sources */,
+				227EC3341FD0E0BD0050DBC3 /* HowToRepViewController.swift in Sources */,
+				227EC2E61FCA36300050DBC3 /* StringFile.swift in Sources */,
+				227EC3361FD0E3540050DBC3 /* NutritionViewController.swift in Sources */,
+				227EC2F11FCCAB6D0050DBC3 /* ExerciseCell.swift in Sources */,
+				227EC2E81FCC76BB0050DBC3 /* CategoryCell.swift in Sources */,
 				227EC2CC1FCA20480050DBC3 /* AppDelegate.swift in Sources */,
+				227EC32F1FD0C0D90050DBC3 /* SegueFromRight.swift in Sources */,
+				227EC2EF1FCC9D1B0050DBC3 /* Category.swift in Sources */,
+				227EC3311FD0C2D80050DBC3 /* ExercisesBySelectedMuscleViewController.swift in Sources */,
+				227EC2DE1FCA20AD0050DBC3 /* Exercise.swift in Sources */,
+				227EC2ED1FCC7F7F0050DBC3 /* CategoriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

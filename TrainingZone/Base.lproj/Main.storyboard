@@ -1,24 +1,534 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E5x-Ro-J6z">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+            <string>Avenir-Heavy</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--TRAINING ZONE-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CategoriesViewController" customModule="TrainingZone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🏋🏻 CATEGORIES 🏋🏻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrG-ly-yj4">
+                                <rect key="frame" x="105.5" y="25" width="164" height="25"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bxf-bS-qgZ">
+                                <rect key="frame" x="0.0" y="70" width="375" height="533"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="128" id="w8M-Wt-TcK" customClass="CategoryCell" customModule="TrainingZone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="128"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w8M-Wt-TcK" id="iC2-hK-T8Z">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="127.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Exercises" translatesAutoresizingMaskIntoConstraints="NO" id="grf-ln-QBS">
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="121.5"/>
+                                                    <color key="backgroundColor" red="0.34953997460304564" green="0.34953997460304564" blue="0.34953997460304564" alpha="0.38530072773972601" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXERCISES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQk-nJ-6jZ">
+                                                    <rect key="frame" x="47.5" y="47" width="280" height="33"/>
+                                                    <color key="backgroundColor" red="0.52024694142607864" green="0.52024694142607864" blue="0.52024694142607864" alpha="0.39034365301262841" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="33" id="H5H-uI-wnI"/>
+                                                        <constraint firstAttribute="width" constant="280" id="Xvt-Bn-6JE"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="grf-ln-QBS" firstAttribute="top" secondItem="iC2-hK-T8Z" secondAttribute="top" constant="3" id="CX3-55-6MQ"/>
+                                                <constraint firstItem="gQk-nJ-6jZ" firstAttribute="centerX" secondItem="iC2-hK-T8Z" secondAttribute="centerX" id="N9H-9a-Xei"/>
+                                                <constraint firstAttribute="bottom" secondItem="grf-ln-QBS" secondAttribute="bottom" constant="3" id="Q1J-Iv-OZo"/>
+                                                <constraint firstItem="grf-ln-QBS" firstAttribute="leading" secondItem="iC2-hK-T8Z" secondAttribute="leading" id="SUY-ah-4Au"/>
+                                                <constraint firstItem="gQk-nJ-6jZ" firstAttribute="centerY" secondItem="iC2-hK-T8Z" secondAttribute="centerY" id="nQr-Ct-tg3"/>
+                                                <constraint firstAttribute="trailing" secondItem="grf-ln-QBS" secondAttribute="trailing" id="ye3-Cx-idI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryImage" destination="grf-ln-QBS" id="s6v-AB-u2M"/>
+                                            <outlet property="categoryTitle" destination="gQk-nJ-6jZ" id="d3r-gh-fi4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bxf-bS-qgZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3tv-Qs-Ngv"/>
+                            <constraint firstItem="vrG-ly-yj4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WXV-Yv-gJ2"/>
+                            <constraint firstItem="bxf-bS-qgZ" firstAttribute="top" secondItem="vrG-ly-yj4" secondAttribute="bottom" constant="20" id="XZQ-7Y-uNM"/>
+                            <constraint firstItem="bxf-bS-qgZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cc4-Iv-Dip"/>
+                            <constraint firstItem="bxf-bS-qgZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="mJE-wY-HL9"/>
+                            <constraint firstItem="vrG-ly-yj4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="veQ-zz-LRF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="TRAINING ZONE" id="khE-37-A0b"/>
+                    <connections>
+                        <outlet property="tableView" destination="bxf-bS-qgZ" id="9CS-ar-swN"/>
+                        <segue destination="1FU-84-mYj" kind="show" identifier="AllExercisesViewController" id="1Yc-2G-fYt"/>
+                        <segue destination="j7O-y5-wTH" kind="show" identifier="ExercisesByMuscleViewController" customClass="SegueFromRight" customModule="TrainingZone" customModuleProvider="target" id="cYb-Cr-HLj"/>
+                        <segue destination="R6M-Bf-2j0" kind="push" identifier="RepsInfo" id="m8e-bU-LT2"/>
+                        <segue destination="4af-BR-D88" kind="push" identifier="NutritionViewController" id="hbf-cu-drO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="470" y="143"/>
+        </scene>
+        <!--All Exercises View Controller-->
+        <scene sceneID="q9I-PC-FFO">
+            <objects>
+                <viewController id="1FU-84-mYj" customClass="AllExercisesViewController" customModule="TrainingZone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wgi-Yj-7cK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALL EXERCISES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6C9-3V-j93">
+                                <rect key="frame" x="30" y="30" width="265.5" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Sdu-OM-f5Q"/>
+                                    <constraint firstAttribute="width" constant="265.5" id="kq2-OP-0am"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="w6n-GE-gSB">
+                                <rect key="frame" x="0.0" y="85" width="375" height="518"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sFP-r2-MlM">
+                                    <size key="itemSize" width="181" height="187"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AllExercisesCell" id="C7S-f0-v61" customClass="ExerciseCell" customModule="TrainingZone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="187"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="181" height="187"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BarbellCurls" translatesAutoresizingMaskIntoConstraints="NO" id="LqB-q4-CTy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="181" height="101"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="101" id="hlR-a1-C8u"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Muscle: Bicep" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cS-3K-vnP">
+                                                    <rect key="frame" x="11" y="107" width="159" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="TOg-Zc-7D4"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desvlopes Logo Graphic TShirt" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="596-HM-ctb">
+                                                    <rect key="frame" x="10" y="129" width="161" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="zBM-2s-aCe"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="LqB-q4-CTy" firstAttribute="top" secondItem="C7S-f0-v61" secondAttribute="top" id="HXp-f3-AvR"/>
+                                            <constraint firstItem="596-HM-ctb" firstAttribute="leading" secondItem="C7S-f0-v61" secondAttribute="leading" constant="10" id="QsF-Bf-ZFZ"/>
+                                            <constraint firstItem="3cS-3K-vnP" firstAttribute="leading" secondItem="C7S-f0-v61" secondAttribute="leadingMargin" constant="3" id="RBn-M7-GOA"/>
+                                            <constraint firstAttribute="trailing" secondItem="LqB-q4-CTy" secondAttribute="trailing" id="ZzY-cg-cIl"/>
+                                            <constraint firstItem="596-HM-ctb" firstAttribute="top" secondItem="3cS-3K-vnP" secondAttribute="bottom" constant="2" id="aaF-mF-zPa"/>
+                                            <constraint firstAttribute="trailing" secondItem="596-HM-ctb" secondAttribute="trailing" constant="10" id="bto-RZ-gsE"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="3cS-3K-vnP" secondAttribute="trailing" constant="3" id="k7u-Gj-Lqn"/>
+                                            <constraint firstItem="LqB-q4-CTy" firstAttribute="leading" secondItem="C7S-f0-v61" secondAttribute="leading" id="log-af-T9K"/>
+                                            <constraint firstItem="3cS-3K-vnP" firstAttribute="top" secondItem="LqB-q4-CTy" secondAttribute="bottom" constant="6" id="uxS-kE-MoN"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="exerciseImage" destination="LqB-q4-CTy" id="FFF-dX-vB3"/>
+                                            <outlet property="muscleLabel" destination="3cS-3K-vnP" id="w40-5S-cPx"/>
+                                            <outlet property="nameLabel" destination="596-HM-ctb" id="lh9-t0-lzl"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="MyQ-G7-ksa" firstAttribute="trailing" secondItem="w6n-GE-gSB" secondAttribute="trailing" id="1bf-W7-kcR"/>
+                            <constraint firstItem="w6n-GE-gSB" firstAttribute="top" secondItem="6C9-3V-j93" secondAttribute="bottom" constant="30" id="BHW-dA-vC2"/>
+                            <constraint firstItem="6C9-3V-j93" firstAttribute="leading" secondItem="MyQ-G7-ksa" secondAttribute="leading" constant="30" id="J8c-Nc-bnm"/>
+                            <constraint firstItem="MyQ-G7-ksa" firstAttribute="bottom" secondItem="w6n-GE-gSB" secondAttribute="bottom" id="aoV-d0-OwT"/>
+                            <constraint firstItem="w6n-GE-gSB" firstAttribute="leading" secondItem="MyQ-G7-ksa" secondAttribute="leading" id="nBw-iv-gpy"/>
+                            <constraint firstItem="6C9-3V-j93" firstAttribute="top" secondItem="MyQ-G7-ksa" secondAttribute="top" constant="30" id="xqz-Gp-VOe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MyQ-G7-ksa"/>
+                    </view>
+                    <connections>
+                        <outlet property="exercisesCollectionView" destination="w6n-GE-gSB" id="71N-sy-b41"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdl-xC-ByV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734" y="-667"/>
+        </scene>
+        <!--Nutrition View Controller-->
+        <scene sceneID="ElJ-dA-UxI">
+            <objects>
+                <viewController id="4af-BR-D88" customClass="NutritionViewController" customModule="TrainingZone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I6A-1o-885">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nutrition" translatesAutoresizingMaskIntoConstraints="NO" id="swT-O0-N5T">
+                                <rect key="frame" x="0.0" y="307" width="375" height="296"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nutritionbanner" translatesAutoresizingMaskIntoConstraints="NO" id="Wrd-qi-T1C">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why is nutrition important?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcN-UK-vLu">
+                                <rect key="frame" x="30" y="101" width="314" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7YM-1w-9af">
+                                <rect key="frame" x="16" y="130" width="343" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Your food choices each day affect your health how you feel today, tomorrow, and in the future.
+Good nutrition is an important part of leading a healthy lifestyle. Combined with physical activity, your diet can help you to reach and maintain a healthy weight, reduce your risk of chronic diseases (like heart disease and cancer), and promote your overall health.</string>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Jru-Cg-Hnw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8fW-NE-jxT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zix-Tr-li5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733.60000000000002" y="1020.5397301349326"/>
+        </scene>
+        <!--How To Rep View Controller-->
+        <scene sceneID="N8h-Nv-AwB">
+            <objects>
+                <viewController id="R6M-Bf-2j0" customClass="HowToRepViewController" customModule="TrainingZone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kGb-xH-IKJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reps" translatesAutoresizingMaskIntoConstraints="NO" id="MfH-fP-uRJ">
+                                <rect key="frame" x="0.0" y="250" width="375" height="353"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="repsbanner" translatesAutoresizingMaskIntoConstraints="NO" id="HYZ-vQ-N9z">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many reps to perform?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxu-Ho-gCl">
+                                <rect key="frame" x="29" y="20" width="330" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9FE-WB-Mkd">
+                                <rect key="frame" x="40" y="77" width="294" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1613063134517766" green="0.1613063134517766" blue="0.1613063134517766" alpha="0.6970515839041096" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">-Perform not to many reps with high weight if you want to build lean muscle. (from 6 to 10)
+-Perform more reps with less weight to tone muscle. (from 12 to 15 or more)</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="ffI-Ub-jZ2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0H4-5R-2IW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mQX-D6-qF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1541.5999999999999" y="617.54122938530736"/>
+        </scene>
+        <!--EXERCISES BY MUSCLE-->
+        <scene sceneID="inQ-MV-nd5">
+            <objects>
+                <viewController id="jyr-Ce-uQ9" customClass="MuscleSelectorViewController" customModule="TrainingZone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GMh-yx-3aX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="POe-s5-he0">
+                                <rect key="frame" x="0.0" y="134" width="375" height="533"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MuscleCell" rowHeight="121" id="71y-mb-DfO" customClass="MuscleCell" customModule="TrainingZone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="121"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="71y-mb-DfO" id="sf0-GC-1Rz">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H2P-PM-1BI">
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="114.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXERCISES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qck-SS-ITb">
+                                                    <rect key="frame" x="47.5" y="44" width="280" height="33"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="33" id="7ot-M3-IBT"/>
+                                                        <constraint firstAttribute="width" constant="280" id="7sh-lG-PQJ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="31"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="H2P-PM-1BI" firstAttribute="leading" secondItem="sf0-GC-1Rz" secondAttribute="leading" id="Byt-uh-u5D"/>
+                                                <constraint firstAttribute="bottom" secondItem="H2P-PM-1BI" secondAttribute="bottom" constant="3" id="It6-h4-mOv"/>
+                                                <constraint firstAttribute="trailing" secondItem="H2P-PM-1BI" secondAttribute="trailing" id="K8E-l9-w7E"/>
+                                                <constraint firstItem="qck-SS-ITb" firstAttribute="centerX" secondItem="sf0-GC-1Rz" secondAttribute="centerX" id="LUr-9Y-AAF"/>
+                                                <constraint firstItem="qck-SS-ITb" firstAttribute="centerY" secondItem="sf0-GC-1Rz" secondAttribute="centerY" id="YW1-hA-8XL"/>
+                                                <constraint firstItem="H2P-PM-1BI" firstAttribute="top" secondItem="sf0-GC-1Rz" secondAttribute="top" constant="3" id="lhq-LL-TOH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="muscleImage" destination="H2P-PM-1BI" id="03H-KH-nPt"/>
+                                            <outlet property="muscleTitle" destination="qck-SS-ITb" id="rdN-8n-T3r"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🏋🏻 SELECT MUSCLE 🏋🏻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RZ-BV-Crr">
+                                <rect key="frame" x="90.5" y="89" width="193.5" height="25"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3RZ-BV-Crr" firstAttribute="top" secondItem="YjY-Vn-VyP" secondAttribute="top" constant="25" id="Hb5-Xl-TsS"/>
+                            <constraint firstItem="POe-s5-he0" firstAttribute="bottom" secondItem="YjY-Vn-VyP" secondAttribute="bottom" id="In1-Xv-5B5"/>
+                            <constraint firstItem="POe-s5-he0" firstAttribute="top" secondItem="3RZ-BV-Crr" secondAttribute="bottom" constant="20" id="PdY-AB-pu2"/>
+                            <constraint firstItem="3RZ-BV-Crr" firstAttribute="centerX" secondItem="GMh-yx-3aX" secondAttribute="centerX" id="VyI-Sc-SS9"/>
+                            <constraint firstItem="POe-s5-he0" firstAttribute="leading" secondItem="YjY-Vn-VyP" secondAttribute="leading" id="oC4-U5-hNp"/>
+                            <constraint firstItem="POe-s5-he0" firstAttribute="trailing" secondItem="YjY-Vn-VyP" secondAttribute="trailing" id="omJ-gB-s9a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YjY-Vn-VyP"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="EXERCISES BY MUSCLE" id="bL8-Dw-pgK">
+                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="wbW-xI-hGP">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rma-DE-tgx">
+                                <rect key="frame" x="16" y="10" width="83" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backButtonWhite"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="jyr-Ce-uQ9" eventType="touchUpInside" id="1en-pB-ixS"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="POe-s5-he0" id="pGe-PO-FYt"/>
+                        <segue destination="KaJ-ye-M8d" kind="show" identifier="MusclesViewController" id="ieO-yM-luf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ff0-Bp-72W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2503" y="-80"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="P5I-Wu-t4i">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E5x-Ro-J6z" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="3ga-y2-e1G">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UQP-5D-N8j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jQx-jY-dWC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-297" y="134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7tL-tG-LD2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" id="j7O-y5-wTH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BLD-3s-HGM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jyr-Ce-uQ9" kind="relationship" relationship="rootViewController" id="jHp-3G-fNa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r7W-Zw-3uE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1543" y="-79"/>
+        </scene>
+        <!--Exercises By Selected Muscle View Controller-->
+        <scene sceneID="bNU-Ms-Svp">
+            <objects>
+                <viewController id="KaJ-ye-M8d" customClass="ExercisesBySelectedMuscleViewController" customModule="TrainingZone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CkZ-dG-xFa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALL EXERCISES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbH-SD-tOl">
+                                <rect key="frame" x="30" y="94" width="265.5" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265.5" id="1L4-Bf-4LX"/>
+                                    <constraint firstAttribute="height" constant="25" id="6o8-1W-8Qb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sYR-vg-c8c">
+                                <rect key="frame" x="0.0" y="149" width="375" height="518"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SvW-gM-TsF">
+                                    <size key="itemSize" width="181" height="187"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MuscleExerciseCell" id="boe-ee-bbK" customClass="ExerciseCell" customModule="TrainingZone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="187"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="181" height="187"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BarbellCurls" translatesAutoresizingMaskIntoConstraints="NO" id="jU3-pf-PZh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="181" height="101"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="101" id="1AQ-br-9Zs"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Muscle: Bicep" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vY6-IM-Ki3">
+                                                    <rect key="frame" x="11" y="107" width="159" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="BW4-Ok-zvL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desvlopes Logo Graphic TShirt" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRc-Kh-4QN">
+                                                    <rect key="frame" x="10" y="129" width="161" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="qiZ-29-7yt"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="vY6-IM-Ki3" firstAttribute="leading" secondItem="boe-ee-bbK" secondAttribute="leadingMargin" constant="3" id="DVA-We-7V9"/>
+                                            <constraint firstItem="vY6-IM-Ki3" firstAttribute="top" secondItem="jU3-pf-PZh" secondAttribute="bottom" constant="6" id="FvS-wX-Tdv"/>
+                                            <constraint firstItem="jU3-pf-PZh" firstAttribute="leading" secondItem="boe-ee-bbK" secondAttribute="leading" id="HOo-De-khu"/>
+                                            <constraint firstAttribute="trailing" secondItem="CRc-Kh-4QN" secondAttribute="trailing" constant="10" id="IHH-XW-fa0"/>
+                                            <constraint firstItem="CRc-Kh-4QN" firstAttribute="top" secondItem="vY6-IM-Ki3" secondAttribute="bottom" constant="2" id="O55-pd-9TL"/>
+                                            <constraint firstItem="jU3-pf-PZh" firstAttribute="top" secondItem="boe-ee-bbK" secondAttribute="top" id="RdV-qV-Ezw"/>
+                                            <constraint firstAttribute="trailing" secondItem="jU3-pf-PZh" secondAttribute="trailing" id="YUG-fy-cbO"/>
+                                            <constraint firstItem="CRc-Kh-4QN" firstAttribute="leading" secondItem="boe-ee-bbK" secondAttribute="leading" constant="10" id="Zcs-nc-JVU"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="vY6-IM-Ki3" secondAttribute="trailing" constant="3" id="kiL-By-DcU"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="exerciseImage" destination="jU3-pf-PZh" id="ysj-6p-7wb"/>
+                                            <outlet property="muscleLabel" destination="vY6-IM-Ki3" id="kGL-Ce-7SS"/>
+                                            <outlet property="nameLabel" destination="CRc-Kh-4QN" id="pId-UZ-P1f"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="sYR-vg-c8c" firstAttribute="leading" secondItem="str-N9-vV9" secondAttribute="leading" id="8QK-Cu-vGl"/>
+                            <constraint firstItem="sYR-vg-c8c" firstAttribute="top" secondItem="ZbH-SD-tOl" secondAttribute="bottom" constant="30" id="XKH-eW-3Px"/>
+                            <constraint firstItem="str-N9-vV9" firstAttribute="trailing" secondItem="sYR-vg-c8c" secondAttribute="trailing" id="YXl-Zh-T6i"/>
+                            <constraint firstItem="ZbH-SD-tOl" firstAttribute="top" secondItem="str-N9-vV9" secondAttribute="top" constant="30" id="dFX-An-qHI"/>
+                            <constraint firstItem="str-N9-vV9" firstAttribute="bottom" secondItem="sYR-vg-c8c" secondAttribute="bottom" id="vIL-tz-mWa"/>
+                            <constraint firstItem="ZbH-SD-tOl" firstAttribute="leading" secondItem="str-N9-vV9" secondAttribute="leading" constant="30" id="x30-jK-5LU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="str-N9-vV9"/>
+                    </view>
+                    <connections>
+                        <outlet property="exercisesCollectionView" destination="sYR-vg-c8c" id="WEh-sv-bL5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DBM-lS-pfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3450" y="-81"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BarbellCurls" width="734" height="488"/>
+        <image name="Exercises" width="750" height="500"/>
+        <image name="backButtonWhite" width="29" height="24"/>
+        <image name="nutrition" width="499" height="389"/>
+        <image name="nutritionbanner" width="963" height="267"/>
+        <image name="reps" width="2121" height="1414"/>
+        <image name="repsbanner" width="800" height="500"/>
+    </resources>
 </document>

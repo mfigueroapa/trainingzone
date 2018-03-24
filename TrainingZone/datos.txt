@@ -1,0 +1,171 @@
+Barbell Curls
+Bicep
+BarbellCurls
+
+Barbell Drag Bicep Curls
+Bicep
+BarbellDragBicepCurls
+
+Cable Hammer Bicep Curls
+Bicep
+CableHammerBicepCurls
+
+Dumbbell Bicep Curls
+Bicep
+DumbbellBicepCurls
+
+Dumbbell Concentration Curls
+Bicep
+DumbbellConcentrationCurls
+
+EZ Bar Preacher Curls
+Bicep
+EZBarPreacherCurls
+
+Incline Bench Dumbbell Curls
+Bicep
+InclineBenchDumbbellCurls
+
+One Arm Dumbbell Preacher Curl
+Bicep
+OneArmDumbbellPreacherCurl
+
+Overhead Cable Curl
+Bicep
+OverheadCableCurl
+
+Reverse Grip EZ Curl Bar Curls
+Bicep
+ReverseGripEZCurlBarCurls
+
+Barbell Pushups
+Tricep
+BarbellPushups
+
+Bosu Ball Chest Dumbbell Press
+Tricep
+BosuBallChestDumbbellPress
+
+Cable Rope Overhead Tricep Extensions
+Tricep
+CableRopeOverheadTricepExtensions
+
+Cable Triceps Kickbacks
+Tricep
+CableTricepsKickbacks
+
+Decline Dumbbell Flyes
+Tricep
+DeclineDumbbellFlyes
+
+Decline Skull Crushers
+Tricep
+DeclineSkullCrushers
+
+Double Arm Tricep Kickbacks
+Tricep
+DoubleArmTricepKickbacks
+
+Overhand Barbell Bench Press
+Tricep
+OverhandBarbellBenchPress
+
+Single Arm Overhead Dumbbell Tricep Extensions
+Tricep
+SingleArmOverheadDumbbellTricepExtensions
+
+Tricep Overhead Extensions
+Tricep
+TricepOverheadExtensions
+
+Barbell Bench Press
+Chest
+BarbellBenchPress
+
+Barbell Pushups
+Chest
+BarbellPushups
+
+Decline Barbell Bench Press
+Chest
+DeclineBarbellBenchPress
+
+Decline Bench Dumbbell Press
+Chest
+DeclineBenchDumbbellPress
+
+Dumbbell Flyes
+Chest
+DumbbellFlyes
+
+Dumbbell Press
+Chest
+DumbbellPress
+
+Incline Barbell Bench Chest Press
+Chest
+InclineBarbellBenchChestPress
+
+Lying Chest Overhead Extensions
+Chest
+LyingChestOverheadExtensions
+
+Cable Squat Rows
+Back
+CableSquatRows
+
+Dumbbell Incline Bench Rows
+Back
+DumbbellInclineBenchRows
+
+Dumbbell Pullovers
+Back
+DumbbellPullovers
+
+Low Cable Back Rows
+Back
+LowCableBackRows
+
+Reverse Cable Flyes
+Back
+ReverseCableFlyes
+
+T Bar Rows
+Back
+TBarRows
+
+Barbell Box Squats
+Leg
+BarbellBoxSquats
+
+Barbell Hip Thrusts
+Leg
+BarbellHipThrusts
+
+Barbell Step Ups
+Leg
+BarbellStepUps
+
+Dumbbell Lunges
+Leg
+DumbbellLunges
+
+Plie Dumbbell Squats
+Leg
+PlieDumbbellSquats
+
+Squats
+Legs
+Squats
+
+Dumbbell Weighted Leg Pull Ins
+Abs
+DumbbellWeightedLegPullIns
+
+Kneeling Cable Crunches
+Abs
+KneelingCableCrunches
+
+Upward Cable Wood Chops
+Abs
+UpwardCableWoodChops
